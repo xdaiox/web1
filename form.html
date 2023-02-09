@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        fieldset {
+            width: 500px;
+            border: 1px solid rosybrown;
+            margin: 20px;
+            border-radius: 15px;
+        }
+
+        .st1 {
+            width: 450px;
+            border-bottom: 3px dashed rgb(199, 199, 199);
+            margin: 20px;
+            padding-bottom: 10px;
+        }
+
+        .sub {
+            width: 450px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .t1 {
+            width: 100px;
+            /* border: 1px solid red; */
+            float: left;
+            text-align: right;
+        }
+
+        legend {
+            color: rgb(94, 145, 255);
+            margin-left: 50px;
+            border: 1px solid rosybrown;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" enctype="multipart/from-data">
+        <fieldset>
+            <legend>個人資料一</legend>
+            <div class="st1">
+                <label for="account1" class="t1">姓名:</label>
+                <input type="text" id="account1" name="account" autofocus placeholder="guest" autocomplete="off"
+                    size="10">
+            </div>
+
+            <div class="st1">
+                <label class="t1">性別</label>
+                <label>
+                    <input type="radio" name="gender" id="" required checked>男
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="">女
+                </label>
+            </div>
+
+            <div class="st1">
+                <label for="pwd1" class="t1">密碼:</label>
+                <input type="password" id="pwd1" name="pwd" maxlength="6" required>
+            </div>
+
+            <div class="st1">
+                <label for="" class="t1">生日:</label>
+                <input type="date" name="" id="" value="2000-01-01">
+            </div>
+
+            <div class="st1">
+                <label for="" class="t1">E-mail:</label>
+                <input type="email" name="" id="">
+            </div>
+            <div class="st1">
+                <label for="" class="t1">身分證字號:</label>
+                <input type="text" name="" id="idcode" maxlength="10" pattern="[a-z,A-Z]{1}[1-2,8-9]{1}\d{8}">
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>地址</legend>
+            <div class="st1">
+                <label class="t1">縣市</label>
+                <select name="add1" id="" multiple size="5">
+                    <option value="Tpe">台北市</option>
+                    <option value="Tph">新北市</option>
+                    <option value="Tyu" selected>桃園市</option>
+                    <option value="Hsc">新竹市</option>
+                </select>
+            </div>
+
+            <div class="st1">
+                <label class="t1">完整地址:</label>
+                <input type="text" name="address" id="" size="20">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>個人資料二</legend>
+
+            <div class="st1">
+                <label class="t1">Blog:</label>
+                <input type="url" name="hplist" list="urllist">
+                <datalist id="urllist">
+                    <option value="http://www.google.com">google</option>
+                    <option value="http://www.facebook.com"></option>
+                    <option value="http://www.pchome.com.tw"></option>
+                </datalist>
+            </div>
+
+            <div class="st1">
+                <label class="t1">照片</label>
+                <input type="file" name="fil1" id="" multiple>
+            </div>
+
+            <div class="st1">
+                <label class="t1">興趣:</label>
+                <label>
+                    <input type="checkbox" name="hobby" id="">電影
+                </label>
+                <label>
+                    <input type="checkbox" name="sport" id="">運動
+                </label>
+                <label>
+                    <input type="checkbox" name="travel" id="">旅遊
+                </label>
+                <label>
+                    <input type="checkbox" name="music" id="">音樂
+                </label>
+            </div>
+
+            <div class="st1"><label for="sug1" class="t1">意見:</label><textarea name="commet" id="sug1" cols="40"
+                    rows="5"
+                    readonly>【文／Sophie Yeh】經典美劇《絕命毒師》完結近10年了，但觀眾仍意猶未盡，近日飾演「華特」布萊恩克萊斯頓(Bryan Cranston)與「傑斯」亞倫保羅(Aaron Paul)再次合體，他們重現影集的經典片段，改賣零食了！</textarea>
+            </div>
+            <div class="sub">
+                <input type="reset" value="清除">
+                <input type="submit" value="送出" disabled>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

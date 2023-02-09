@@ -8,7 +8,7 @@
     <title>Table</title>
     <style>
         .td1 {
-            border: 2px solid rgb(159, 159, 255);
+            border: 2px solid rgb(0, 0, 0);
             width: 40%;
             height: 200px;
             border-collapse: collapse;
@@ -16,7 +16,30 @@
 
         td,
         th {
-            border: 1px solid rgb(168, 168, 168);
+            border: 1px solid rgb(43, 43, 43);
+        }
+
+        thead {
+            background-color: rgb(148, 34, 255);
+            color: rgb(90, 255, 118);
+        }
+
+        tbody {
+            background-color: rgb(210, 162, 255);
+            text-align: center;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: rgb(229, 206, 252);
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-color: rgb(210, 162, 255);
+        }
+
+        tbody td:hover {
+            background-color: rgb(131, 0, 253);
+            color: red;
         }
     </style>
 </head>
@@ -24,42 +47,67 @@
 
 <body>
     <table class="td1">
-        <tr>
-            <th>column1</th>
-            <th>column2</th>
-            <th>column3</th>
-            <th>column4</th>
-        </tr>
-        <tr>
-            <th colspan="4">column1</th>
-            <!-- <th>column2</th> -->
-            <!-- <th>column3</th> -->
-            <!-- <th>column4</th> -->
-        </tr>
-        <tr>
-            <td>1</td>
-            <td colspan="3">2</td>
-            <!-- <td>3</td>
-            <td>4</td> -->
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td rowspan="3">3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <!-- <td>3</td> -->
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <!-- <td>3</td> -->
-            <td>4</td>
-        </tr>
+        <caption>
+            <h2>表格練習</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>column1</th>
+                <th>column2</th>
+                <th>column3</th>
+                <th>column4</th>
+            </tr>
+            <tr>
+                <th colspan="4">column1</th>
+                <!-- <th>column2</th> -->
+                <!-- <th>column3</th> -->
+                <!-- <th>column4</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td colspan="3">2</td>
+                <!-- <td>3</td>
+                <td>4</td> -->
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="3">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 
