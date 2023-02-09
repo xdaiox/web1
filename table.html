@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .td1 {
+            border: 2px solid rgb(159, 159, 255);
+            width: 40%;
+            height: 200px;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(168, 168, 168);
+        }
+    </style>
+</head>
+
+
+<body>
+    <table class="td1">
+        <tr>
+            <th>column1</th>
+            <th>column2</th>
+            <th>column3</th>
+            <th>column4</th>
+        </tr>
+        <tr>
+            <th colspan="4">column1</th>
+            <!-- <th>column2</th> -->
+            <!-- <th>column3</th> -->
+            <!-- <th>column4</th> -->
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="3">2</td>
+            <!-- <td>3</td>
+            <td>4</td> -->
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="3">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <!-- <td>3</td> -->
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <!-- <td>3</td> -->
+            <td>4</td>
+        </tr>
+    </table>
+</body>
+
+</html>
