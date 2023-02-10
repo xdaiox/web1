@@ -6,12 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS的使用--自訂樣式(Class)</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="styles/st1.css">
-        <link rel="stylesheet" href="styles/font.css"> -->
-    <link rel="stylesheet" href="styles/link.css">
-
+    <link rel="stylesheet" href="styles/st1.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap" rel="stylesheet"> -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap');
+
+        @font-face {
+            src: url(fonts/JustOldFashion.ttf);
+            font-family: font1;
+        }
+
+        .font1 {
+            font-family: font1;
+        }
+
+        @font-face {
+            src: url(fonts/SCRIPTIN.ttf);
+            font-family: font2;
+        }
+
+        .font2 {
+            font-family: font2;
+        }
+
+        .p1 {
+            font-family: 'Sassy Frass', cursive;
+            font-size: 50px;
+            color: blue;
+        }
+
         /* .st1 {
             color: orange;
             font-style: italic;
@@ -56,10 +79,10 @@
 <body>
     <!-- inline>embedding -->
     <!-- id>class -->
-    <h1 class="st1 font1">apple</h1>
+    <h1 class="st1  font1">apple</h1>
     <h2 class="st2 font2">orange</h2>
     <h2 class="st1 font1">banana</h2>
-    <h3 class="colh3 font2" id="col2h3">grape</h3>
+    <h3 style="color:red;" class="colh3" id="col2h3">grape</h3>
     <h3 class="col2 col1 size1 trans1">panda</h3>
     <h4 class="col2 size1 sty1">monkey</h4>
     <p class="p1">This is a paragraph!</p>

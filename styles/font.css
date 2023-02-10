@@ -1,0 +1,25 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap'); */
+
+@font-face {
+    font-family: font1;
+    src: url(../fonts/JustOldFashion.ttf);
+}
+
+.font1 {
+    font-family: font1;
+}
+
+@font-face {
+    font-family: font2;
+    src: url(../fonts/SCRIPTIN.ttf);
+}
+
+.font2 {
+    font-family: 'Babylonica', cursive;
+}
+
+.p1 {
+    font-family: 'Babylonica', cursive;
+    font-size: 50px;
+    color: blue;
+}
